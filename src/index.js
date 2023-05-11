@@ -72,4 +72,26 @@ h1Tag.innerText = "DOM Is Awesome";
 
 const startButton = document.querySelector("button");
 startButton.innerHTML = "Get Started";
+
+const ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute("src", "http://localhost:9000/img/cta.png");
+
+const topContent = document.getElementsByClassName("top-content")[0];
+const firstTextContent = topContent.children[0];
+const topH4Tag1 = firstTextContent.children[0];
+topH4Tag1.innerText = "Features";
+const topPTag1 = firstTextContent.children[1];
+topPTag1.innerText =
+	"Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+const secondTextContent = topContent.children[1];
+const topH4Tag2 = secondTextContent.children[0];
+topH4Tag2.innerText = "About";
+const topPTag2 = secondTextContent.children[1];
+topPTag2.innerText =
+	"About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+const middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", "http://localhost:9000/img/accent.png");
+
 //end
