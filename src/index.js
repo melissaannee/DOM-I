@@ -51,9 +51,6 @@ const nav = document.querySelector("nav");
 const navLinks = nav.getElementsByTagName("a");
 const objNav = siteContent.nav;
 
-console.log(navLinks);
-
-// Setting the class names
 let index = 0;
 for (let aTag of navLinks) {
 	aTag.className = "italic";
@@ -69,6 +66,10 @@ let contactNav = (nav.children[5].innerHTML = "Contact");
 
 const logoImg = document.getElementById("logo-img");
 logoImg.setAttribute("src", "http://localhost:9000/img/logo.png");
-console.log(logoImg);
 
+const h1Tag = document.querySelector("h1");
+h1Tag.innerText = "DOM Is Awesome";
+
+const startButton = document.querySelector("button");
+startButton.innerHTML = "Get Started";
 //end
